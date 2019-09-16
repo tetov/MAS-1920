@@ -15,4 +15,5 @@
 
 ## Recommended Software
 * [MeshLab](http://www.meshlab.net)
+* [Aesba Studio for Thymio](https://www.thymio.org/program/aseba/)
 * ...
