@@ -7,12 +7,13 @@
 * [compas core](https://compas-dev.github.io/main/gettingstarted/installation.html)
 
 ### CAD and Rendering
-* Rhino
-* Keyshot
+* [Rhino](https://www.rhino3d.com/download)
+* [Keyshot](https://www.keyshot.com/try/)
 
 ### Communication
 * [Slack](https://slack.com/), also in app stores for your OS
 
 ## Recommended Software
 * [MeshLab](http://www.meshlab.net)
+* [Aesba Studio for Thymio](https://www.thymio.org/program/aseba/)
 * ...
