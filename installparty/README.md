@@ -15,7 +15,7 @@ To install, go to https://www.keyshot.com/resources/downloads/ and pick the inst
 
 ![keyshot](image001.png)
 
-and when prompted for the license server, enter keyshot.arch.ethz.ch
+and when prompted for the license server, enter **keyshot.arch.ethz.ch**
 You need to be online (and in the ETH network, or VPN) to launch the software. There are 20 floating licenses to check out.
 
 ## Communication
