@@ -9,7 +9,13 @@
 
 ## CAD and Rendering
 * [Rhino](https://www.rhino3d.com/download) *
-* [Keyshot](https://www.keyshot.com/try/)
+* KeyShot
+To install, go to https://www.keyshot.com/resources/downloads/ and pick the installer for your OS. Then during installation, choose “Floating License” in this window:
+
+![keyshot](image001.png)
+
+and when prompted for the license server, enter keyshot.arch.ethz.ch
+You need to be online (and in the ETH network, or VPN) to launch the software. There are 20 floating licenses to check out.
 
 ## Communication
 * [Slack](https://slack.com/), also in app stores for your OS *
