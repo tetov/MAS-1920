@@ -1,6 +1,7 @@
 # Install Party
 
 ## Programming
+* [Sourcetree Git](https://confluence.atlassian.com/get-started-with-sourcetree/install-sourcetree-847359094.html) *
 * [Anaconda Python 3.7](https://www.anaconda.com/distribution/#download-section) *
 * [Visual Studio Code](https://code.visualstudio.com) *
 * [compas core](https://compas-dev.github.io/main/gettingstarted/installation.html) *
