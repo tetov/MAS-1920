@@ -158,13 +158,16 @@ end</node>
 <node nodeId="45355" name="thymio-II">var black_level = 650
 var white_level = 720
 
-var led_pulse
+var led_pulse = -64
 var temp
 
 var s[2]
 var dir
 var speed = SPEED_LINE
 var obst = 0
+var counter = 0
+
+timer.period[0] = 50
 
 onevent buttons
 	when  button.center==1 do
@@ -177,11 +180,15 @@ onevent buttons
 
 onevent timer0
 	#Body color pulse
-	led_pulse = led_pulse + 1
-	if led_pulse > 0 and obst != 1 then
-		call leds.top(0, led_pulse, led_pulse)
-		if led_pulse > 40 then
+	if  dir != 0 then
+		led_pulse = led_pulse + 1
+		counter = counter + 1
+	end
+	if led_pulse > 0 then
+		call leds.top(led_pulse, 0, 0)
+		if led_pulse > 40 and counter > 200 then
 			led_pulse = -64
+			counter = 0
 		end
 	else
 	temp=-led_pulse/2
