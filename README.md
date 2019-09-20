@@ -2,3 +2,5 @@
 
 # installation party
 # python basics
+
+my personal notes
