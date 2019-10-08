@@ -1,4 +1,4 @@
-def draw_compas_mesh(mesh, color='white'):
+def draw_compas_mesh(mesh, color='white', size=1.0):
     """
     Renders a compas mesh on a 3D canvas with ipyvolume.
 
@@ -33,6 +33,7 @@ def draw_compas_mesh(mesh, color='white'):
     # create the ipyvolume plot
     ipv.figure(width=800, height=450)
     viewermesh = ipv.plot_trisurf(x, y, z, triangles_only, color=color)
+    ipv.xyzlim(size)
     ipv.style.use('minimal')
     ipv.show()
 
