@@ -58,8 +58,7 @@ def export_obj_by_attribute(filepath, mesh, attribute):
         return
 
     fkeys = list(mesh.faces())
-    fkeys.sort(key=lambda x: mesh.get_face_attribute(x, attribute))
-
+    fkeys.sort(key=lambda x: str(mesh.get_face_attribute(x, attribute)))
     key_index = mesh.key_index()
     current_group = 'na'
     with open(filepath, 'w+') as fh:
