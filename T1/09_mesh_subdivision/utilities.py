@@ -52,13 +52,18 @@ def export_obj_by_attribute(filepath, mesh, attribute):
     attribute: String
         The name of the faces' attribute to group by.
     """
-    # if the faces don't have the attribute, export normally
-    if not mesh.get_face_attribute(mesh.get_any_face(), attribute):
+    # if none of the faces has the attribute, export normally
+    if not any(mesh.get_faces_attribute(mesh.faces(), attribute)):
         mesh.to_obj(filepath)
         return
 
+    # possible check for faces without attribute:
+    # if None in mesh.get_faces_attribute(mesh.faces(), attribute)
+    # robust alternative: convert to string > None becomes 'None' group
     fkeys = list(mesh.faces())
+
     fkeys.sort(key=lambda x: str(mesh.get_face_attribute(x, attribute)))
+
     key_index = mesh.key_index()
     current_group = 'na'
     with open(filepath, 'w+') as fh:
